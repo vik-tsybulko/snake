@@ -1,0 +1,10 @@
+.snake {
+  background-color: green;
+  height: 25px;
+  position: absolute;
+  transition: top .2s, left .2s;
+
+  &:first-child {
+    background-color: black;
+  }
+}

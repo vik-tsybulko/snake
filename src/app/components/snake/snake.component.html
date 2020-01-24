@@ -1,0 +1,8 @@
+<div class="snake"
+     *ngFor="let cell of snake"
+     [style.left]="cell.x * arenaService.cellDimensions + 'px'"
+     [style.top]="cell.y * arenaService.cellDimensions + 'px'"
+     [style.width]="arenaService.cellDimensions + 'px'"
+     [style.height]="arenaService.cellDimensions + 'px'"
+>
+</div>

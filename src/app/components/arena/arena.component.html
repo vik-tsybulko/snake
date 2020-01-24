@@ -1,0 +1,16 @@
+<div class="game-over"
+     *ngIf="arenaService.gameOver"
+>
+  <span>Game over. Your score is {{ arenaService.getSnakeLength() }}</span>
+  <button (click)="arenaService.restartGame()">Restart</button>
+</div>
+<div class="arena"
+     *ngIf="!arenaService.restart"
+>
+  <span class="score">Your score: {{ arenaService.getSnakeLength() }}</span>
+  <app-wall></app-wall>
+  <app-snake
+  ></app-snake>
+  <app-eat
+  ></app-eat>
+</div>
